@@ -1,5 +1,5 @@
 import React, { use } from 'react';
-import { FaRegStar } from 'react-icons/fa';
+
 import BookCard from '../ui/bookCard';
 
 const booksPromise = fetch('/booksData.json').then(res => res.json())
@@ -13,8 +13,8 @@ const AllBooks = () => {
 
             <div className='grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-20' >
                 {
-                    books.map(book => {
-                        return <BookCard book={book} />
+                    books.map((book, index) => {
+                        return <BookCard key={index} book={book} />
 
                     })
                 }
