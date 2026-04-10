@@ -15,8 +15,8 @@ const Books = () => {
                 <div className="dropdown dropdown-start">
                 <div tabIndex={0} role="button" className="btn m-1">Click ⬇️ {sortingType} </div>
                 <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                    <li onClick={()=> setSortingType('Pages')} ><a>Pages</a></li>
-                    <li onClick={()=> setSortingType('Rating')} ><a>Rating</a></li>
+                    <li onClick={()=> setSortingType('pages')} ><a>Pages</a></li>
+                    <li onClick={()=> setSortingType('rating')} ><a>Rating</a></li>
                 </ul>
             </div>
             </div>
