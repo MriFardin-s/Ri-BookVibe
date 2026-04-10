@@ -1,4 +1,4 @@
-import React, { use, useContext, useState } from 'react';
+import React, { use, useContext } from 'react';
 import { useParams } from 'react-router';
 import { BookContext } from '../../context/BookProvider';
 
@@ -14,7 +14,7 @@ const BookDetails = () => {
 
   const expectedBook = books.find(book => book.bookId == bookParamsId)
 
-  const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = expectedBook;
+  const { bookName, author, image, review, totalPages, category, tags, publisher, yearOfPublishing } = expectedBook;
 
 
 
