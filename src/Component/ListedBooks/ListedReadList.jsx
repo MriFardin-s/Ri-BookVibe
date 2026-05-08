@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { BookContext } from '../../context/BookProvider';
-import BookCard from '../ui/bookCard';
+import BookCard from '../ui/BookCard';
 
 const ListedReadList = ({ sortingType }) => {
     const { storedBooks } = useContext(BookContext);
