@@ -6,8 +6,8 @@ const Navbar = () => {
         <>
             <li> <NavLink to={'/'} className={({isActive})=> 
                 isActive ? 'text-green-500 border border-green-500 ' : ''} >Home</NavLink> </li>
-            <li> <NavLink to={'/books'} className={({isActive})=> isActive ? 'text-green-500 border border-green-500 ' : ''} >Listed Books</NavLink> </li>
-            <li> <NavLink to={'/page-to-read'} className={({isActive})=> isActive ? 'text-green-500 border border-green-500 ' : ''} >Page To Read</NavLink> </li>
+            <li> <NavLink to={'/books'} className={({isActive})=> isActive ? 'text-green-500 border border-green-500 ' : ''} > - Listed Books</NavLink> </li>
+            <li> <NavLink to={'/page-to-read'} className={({isActive})=> isActive ? 'text-green-500 border border-green-500 ' : ''} > - Page To Read</NavLink> </li>
 
         </>
     )
