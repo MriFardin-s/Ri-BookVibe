@@ -26,7 +26,7 @@ const BookCard = ({book}) => {
                 <h2 className="card-title font-bold text-2xl mb-2">
                     {book.bookName}
                 </h2>
-                <p className='font-medium text-gray-700 mb-4' >By: {book.author}</p>
+                <p className='font-medium text-gray-700 mb-4' >By : {book.author}</p>
 
                 <div className="card-actions justify-between border-t border-dashed border-gray-300 pt-5 mt-auto">
                     <div className="font-medium text-gray-600">{book.category}</div>
