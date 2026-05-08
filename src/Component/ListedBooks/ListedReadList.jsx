@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { BookContext } from '../../context/BookProvider';
+import BookCard from '../ui/BookCard';
 
-import BookCard from "../ui/BookCard";
+
 
 
 const ListedReadList = ({ sortingType }) => {
@@ -40,7 +41,7 @@ const ListedReadList = ({ sortingType }) => {
         <div>
             <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
                 {filteredReadList.map((book) => (
-                    <BookCard key={book.bookId} book={book} />
+               <BookCard key={book.bookId} book={book} />
                 ))}
             </div>
         </div>
